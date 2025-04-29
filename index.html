@@ -12,24 +12,31 @@
 
   <!-- body body det som skal synes -->
 
-  <body>
-    <header>
-      <nav>
+  <body id="body">
+    <header id="header">
+      <nav class="hamburgermeny" id="HAMBURGER">
         <ul>
         <li><a href="">Hjem</a></li>
         <li><a href="">Om meg</a></li>
         <li><a href="">Prosjekter</a></li>
        </ul>
       </nav>
-      <button>Aktiver meny</button>
+      
     </header>
 
     <main>
-     
+      <div class="box">
+      <button id="myButton" onclick="changeElementStyle('body', 'pink')">Aktiver meny</button>
+
+      <button onclick="testklikkfunksjon()">Test onclick function!</button>
+    </div>
+     test
+      <button onmousedown="varsling()">Test alert</button>
     </main>
 
     <footer>
       <h3>Laget av Eivind</h3>
+      <button onclick="test()">Click me</button>
     </footer>
   </body>
 </html>
