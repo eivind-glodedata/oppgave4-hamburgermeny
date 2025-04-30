@@ -45,4 +45,24 @@ document.getElementById("myButton").onclick = function() {
 function test() {alert("funksjonen funker!")
 };
 
+console.log(isNaN(6))
+
+const myButton = document.querySelector("#myButton");
+
+function separatfunsksjonforeventlistener() {
+    console.log("knappen ble klikket")
+    const hamburgermeny = document.getElementById("HAMBURGER");
+    hamburgermeny.style.display = "none";
+
+};
+
+myButton.addEventListener("click", separatfunsksjonforeventlistener);
+
+myButton.addEventListener("click", function() {
+    console.log("knappen ble klikket med anonym funksjon");
+})
+
+myButton.addEventListener("click", () => {
+    console.log("knappen ble klikket gjennom arrowfunksjon");
+});
 
