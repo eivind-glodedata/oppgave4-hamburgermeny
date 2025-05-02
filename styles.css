@@ -1,13 +1,15 @@
 header {
     background-color: antiquewhite;
     display: flex;
+    flex-direction: row-reverse;
 }
 .hamburgermeny {
-
     background-color: grey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+    
 }
 
-.box button {
+button {
     padding: 20px 10px;
 }

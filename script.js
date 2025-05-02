@@ -1,7 +1,23 @@
-console.log(document.querySelector(".hamburgermeny"));
-console.log(document.querySelector("main").innerHTML);
 
-const hamburgerelementet = document.querySelector(".hamburgermeny");
+console.log(document.querySelector("main").innerText);
+
+
+let hamburgerMenyen = document.querySelector(".hamburgermeny");
+
+let header = document.querySelector("header");
+
+document.getElementById("aktiveringsknapp").addEventListener("click", aktiverMeny);
+
+function aktiverMeny() {
+    if (hamburgerMenyen.style.display === "none" || hamburgerMenyen.style.display === '') {
+        hamburgerMenyen.style.display = "block"
+    }
+
+    else {
+        hamburgerMenyen.style.display = "none"
+    }
+}
+
 
 function changeElementStyle(elementId, newColor) {
     // Get the element by its ID
@@ -30,39 +46,17 @@ function varsling(param1, param2) {
 
 //Alternatively, you can use an event listener for a more modern approach:
 
-document.getElementById("myButton").addEventListener("click", function() {
-    alert("Button was clicked!");
-});
+//document.getElementById("aktiveringsknapp").addEventListener("click", function() {
+   // alert("Knappen ble klikket med anonym funksjon!");
+//});
 
 //assign a function to the onclick event of the button using JavaScript
 
-document.getElementById("myButton").onclick = function() {
-    alert("Button was clicked!");
-};
+//document.getElementById("aktiveringsknapp").onclick = () => {
+ //   alert("Knappen ble klikket med pilfunksjon!");
+//};
 
 
 
-function test() {alert("funksjonen funker!")
-};
 
-console.log(isNaN(6))
-
-const myButton = document.querySelector("#myButton");
-
-function separatfunsksjonforeventlistener() {
-    console.log("knappen ble klikket")
-    const hamburgermeny = document.getElementById("HAMBURGER");
-    hamburgermeny.style.display = "none";
-
-};
-
-myButton.addEventListener("click", separatfunsksjonforeventlistener);
-
-myButton.addEventListener("click", function() {
-    console.log("knappen ble klikket med anonym funksjon");
-})
-
-myButton.addEventListener("click", () => {
-    console.log("knappen ble klikket gjennom arrowfunksjon");
-});
 
