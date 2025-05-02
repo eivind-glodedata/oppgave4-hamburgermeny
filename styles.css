@@ -10,6 +10,13 @@ header {
     
 }
 
-button {
-    padding: 20px 10px;
+@media (min-width: 480px) {
+    .hamburgermeny {
+        display: block;
+    }
+
+    #aktiveringsknapp {
+        display: none;
+    }
+    
 }

@@ -11,6 +11,7 @@ document.getElementById("aktiveringsknapp").addEventListener("click", aktiverMen
 function aktiverMeny() {
     if (hamburgerMenyen.style.display === "none" || hamburgerMenyen.style.display === '') {
         hamburgerMenyen.style.display = "block"
+        const X = document.createElement("p")
     }
 
     else {
